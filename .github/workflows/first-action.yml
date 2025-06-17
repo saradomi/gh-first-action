@@ -12,3 +12,8 @@ jobs:
         run: echo "Hello World!"
       - name: Print goodbye
         run: echo "Done - bye!"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking
+        run: echo "::debug::This is a debug message"
